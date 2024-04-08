@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .box {
   width: 150px;
   height: 150px;
@@ -28,18 +32,19 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
-  grid-template-rows: repeat(2, auto); /* Two rows */
-  gap: 10px; /* Adjust spacing between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 .grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
 }
 .grid-item img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
+  align-items: flex-start;
 }
