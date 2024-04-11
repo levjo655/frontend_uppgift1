@@ -2,11 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
+.navbar li {
+  display: flex;
+  text-decoration: none;
+  display: inline block;
+  align-items: end;
 
+  list-style: none;
+}
 #logo {
-  justify-content: flex-start;
-  width: min-content;
+  align-items: flex-start;
   height: 38px;
   width: 97;
 }
@@ -26,29 +33,32 @@
   font-display: white;
 }
 #box1 {
+  align-items: end;
+  display: flex;
   height: 64px;
   width: 1256px;
   margin: 30px;
 }
 #box2 {
   display: flex;
-  align-items: flex-start;
+
   width: 981px;
   height: 333px;
   margin: 5px;
 }
 #box3 {
+  display: flex;
   width: 245px;
-  height: 831px;
+  height: 300px;
 }
 .grid-container {
   display: flex;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 5px;
+  gap: 1px;
   flex-wrap: wrap;
   justify-self: flex-start;
-  margin: 15px;
+  margin: 30px;
 }
 
 .grid-item {
