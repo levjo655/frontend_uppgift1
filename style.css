@@ -1,45 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
 .container {
+  padding: 40px 70px 40px 70px;
   display: grid;
-  border-radius: 5px;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 20px;
+  grid-template-rows: 80px 350px 400px;
+  grid-template-columns: repeat(3, 1fr) 300px;
+  grid-template-areas:
+    "head head head head"
+    "main main main side"
+    "box box box side";
+  gap: 30px;
 }
 
 .header {
-  margin: auto;
+  grid-area: head;
   background-color: rgb(255, 17, 0);
-  width: 1251px;
-  height: 50px;
   border-radius: 5px;
 }
-.logo nav {
+img {
   width: 5px;
   height: 5px;
 }
 .item1 {
+  grid-area: main;
   border-radius: 5px;
   background-color: #7b3d14;
   color: rgb(175, 22, 22);
-  grid-template-rows: 2, 1fr;
 }
 .img {
-  width: 15px;
 }
 .item2 {
+  grid-area: side;
   border-radius: 5px;
   background-color: blueviolet;
 }
-.grid-container {
-  height: fit-content;
-  width: fit-content;
+.img-box {
+  background-color: bisque;
+  grid-area: box;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 5px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
   padding: 10px;
 }
 .grid-item {
   background-color: #ccc;
-  padding: 20px;
 }
