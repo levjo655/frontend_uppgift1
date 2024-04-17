@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -20,20 +22,39 @@ body {
 .logo {
   align-items: center;
   height: 30px;
-  width: 10px;
+  width: 100px;
 }
 
 .header {
   grid-area: head;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(255, 17, 0);
   border-radius: 5px;
+  padding: 10px 20px;
+}
+
+li {
+  font-family: sans-serif;
+  display: inline-block;
+  margin-left: 20px;
+  color: #fff;
 }
 ul {
-  align-items: flex-end;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item-1 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+}
+button {
+  position: absolute;
+  background-color: red;
+  font-display: white;
 }
 img {
   width: 5px;
