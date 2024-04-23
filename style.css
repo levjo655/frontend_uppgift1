@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(119, 8, 0);
+  background-color: #b00202;
   border-radius: 5px;
   padding: 10px 20px;
 }
@@ -53,7 +53,7 @@ ul {
 }
 button {
   position: absolute;
-  background-color: rgb(103, 1, 1);
+  background-color: #b00202;
   font-display: white;
 }
 img {
@@ -102,7 +102,7 @@ img {
   justify-content: center;
   grid-area: side;
   border-radius: 5px;
-  background-color: rgb(226, 70, 43);
+  background-color: #b00202;
 }
 .box1 {
   display: flex;
@@ -129,7 +129,7 @@ img {
   border-radius: 5px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 0cap;
 }
 .box {
   border-radius: 5px;
@@ -240,4 +240,70 @@ h3 {
   display: flex;
   width: 60%;
   height: auto;
+}
+.text-container4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.mirror img {
+  margin-top: 15px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+}
+.details4 h4 {
+  font-weight: 100;
+  font-size: smaller;
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+}
+.text-container5 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.manor img {
+  margin-top: 15px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+}
+.details5 h4 {
+  font-weight: 100;
+  font-size: smaller;
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+}
+.text-container6 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.zombie img {
+  margin-top: 15px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+}
+.details5 h6 {
+  font-weight: 100;
+  font-size: smaller;
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+}
+p {
+  background-color: #fcfcfc;
 }
