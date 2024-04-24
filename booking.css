@@ -7,6 +7,7 @@ body {
 }
 .container {
   align-items: center;
+
   padding: 40px 70px;
   display: grid;
   grid-template-rows: auto;
@@ -57,17 +58,39 @@ ul {
   justify-content: center;
   background-color: #b00202;
   width: 400px;
-  height: 350px;
-  margin: 60px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 .main-content h2 {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   color: #fff;
 }
 .form-group {
+  align-items: start;
   margin-bottom: 80px;
-  margin: 20px;
+  margin: 10px;
   display: flex;
+}
+.form-group {
+  align-items: start;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #faf5f5;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
 }
