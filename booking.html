@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="booking.css" />
+    <title>booking</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="left-item">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <div class="right-item">
+          <ul>
+            <li>Playing</li>
+            <li>Coming Soon</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box">
+        <div class="main-content">
+          <div class="booking"></div>
+          <h2>Booking Info</h2>
+          <form action="/submit-form" method="post">
+            <div class="form-group">
+              <label for="name">Full name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="number">Number:</label>
+              <input type="phone number" id="number" name="number" required />
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Book Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
