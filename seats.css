@@ -18,7 +18,7 @@ body {
 }
 .header,
 .small-box1 {
-  background-color: aquamarine;
+  background-color: rgb(250, 250, 250);
   padding: 20px;
   font-size: 30px;
 }
@@ -151,4 +151,10 @@ button {
 
 button:hover {
   background-color: #a00;
+}
+.grid {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-areas: "box1 box2";
 }
