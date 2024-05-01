@@ -8,3 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const bookNowButton = document.querySelector('.book-now');
+
+    bookNowButton.addEventListener('click', function() {
+        const selectedSeats = document.querySelectorAll('.seat:checked');
+        const selectedSeatNumbers = [];
+        
+        selectedSeats.forEach(function(seat) {
+            selectedSeatNumbers.push(seat.id);
+        });
+
+      
+        localStorage.setItem('selectedSeats', JSON.stringify(selectedSeatNumbers));
+
+        window.location.href = 'booking.html';
+    });
+});
