@@ -25,6 +25,12 @@
         <div class="main-content">
           <div class="booking"></div>
           <h2>Booking Info</h2>
+          <div class="selected-seats">
+            <h3>Selected Seats</h3>
+            <ul id="selected-seats-list">
+              <!-- Selected seats will be dynamically added here -->
+            </ul>
+          </div>
           <form action="/submit-form" method="post">
             <div class="form-group">
               <label for="name">Full name:</label>
@@ -40,7 +46,8 @@
             </div>
 
             <div class="form-group">
-              <button type="submit">Book Now</button>
+              <button type="submit" onclick="confirmation()">Book Now</button>
+              <script src="booking.js"></script>
             </div>
           </form>
         </div>
