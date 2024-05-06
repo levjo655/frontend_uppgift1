@@ -1,11 +1,11 @@
 function saveSeats() {
   let seats = [];
- //selet all checked boxes and save them to checkboxes
+ //select all checked boxes and save them to checkboxes
   const checkBoxes = document.querySelectorAll(
     "input[type='checkbox']:checked"
   );
   
-  //loop through al lchecked bxes and push through each id to the checkboxes array
+  //loop through all checked boxes and push through each id to the checkboxes array
   for (let i = 0; i < checkBoxes.length; i++) {
     seats.push(checkBoxes[i].id);
   }
